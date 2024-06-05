@@ -1,54 +1,558 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
+    <title>VYSOR PLAYS | Gamer & Software Engineer</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Game Warrior Template">
+    <meta name="keywords" content="warrior, game, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VysorPlays</title>
-    <link rel="icon" href="img/VysorPlays-V.png">
+    <!-- Favicon -->
+    <link href="img/favicon1.ico" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
 </head>
 
-<body bgcolor="#EAB944" align="center">
-    <a href="https://vysorplays.github.io/" align="left"><img src="img/VysorPlays-V.png" align="left"
-            style="width:125px; height:125px; margin:0px -300px -25px 0px;"></img></a>
-    <div><img src="img/logo-vysorplays.png" style="width:200px; height:200px; margin:-20px 0px -25px 0px;">
-
-        <h1 style="margin-top: 0px;"><i>Hello!</i></h1>
-        <h1> Seems like you have reached early!!
-            <br>Currently, this website is under development. <br>
-        </h1>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-    <hr style="border-color: black; border-width: 2px;">
-    <hr style="border-color: black; border-width: 2px;">
-    <div>
-        <h3><a href="https://buymeacoffee.com/VysorPlays" target="_blank"><img src="img/BuyMeACoffee.webp" alt="Buy Me A Coffee
-                and Support" style='width:375px; height: 87px;'/></a></h3>
-        <hr style="border-color: black; border-width: 2px;">
-    </div>
-    <hr style="border-color: black; border-width: 2px;">
-    <h2>For more infomation, you can connect with VysorPlays at:<br>
-        <p><a href="https://instagram.com/vysorplays" target="_blank"
-                style="color: blue; margin-left: 10px; margin-right: 10px;">Instagram</a></div>
-            <a href="https://youtube.com/@vysorplays" target="_blank"
-                style="color: blue; margin-left: 10px; margin-right: 10px;">YouTube</a></div>
-            <a href="https://linktr.ee/vysorplays" target="_blank"
-                style="color: blue; margin-left: 10px; margin-right: 10px;">Socials</a>
-    </h2>
-    </div>
-    </p>
+    <div class="cursors" style="cursor: url(img/custom-cursors/gauntlet-thanos.png), pointer;">
+        <embed src="/music/goodnight.mp3" type="audio/x-wav" loop="true" hidden="true" autostart="1" autoplay="true"/>
+        
+    <!-- Header section -->
+    <header class="header-section" id="top">
+        <div class="container">
+            <!-- logo -->
+            <a class="site-logo" href="index.html"> <!-- logo effect class = logo-effect -->
+                <img src="img/logo.png" alt="VysorPlays">
+            </a>
+            <div class="user-panel social-btn">
+                <a href="https://youtube.com/@VysorPlays" target="_blank">Subscribe</a> <span
+                    style="color: #B0B0B0;">&nbsp; | &nbsp;</span> <a href="https://instagram.com/VysorPlays"
+                    target="_blank">Follow</a>
+            </div>
+            <!-- responsive -->
+            <div class="nav-switch">
+                <i class="fa fa-bars"></i>
+            </div>
+            <!-- site menu -->
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="review.html">Games</a></li>
+                    <li><a href="categories.html">Blog</a></li>
+                    <li><a href="community.html">Forums</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header section end -->
 
-    <h1><img src="img/coming_soon.png" alt="Vysor Plays Coming Soon" style='width:85%;'></h1>
-    <hr style="border-color: black; border-width: 2px;">
-    <br>
-    <h3><img src="img/vysorplays-banner.png" alt="VysorPlays Banner" style="width: 85%; margin:-30px 0px -30px 0px">
-    </h3>
 
-    <br>
-    <hr style="border-color: black; border-width: 2px;">
-    <br>
-    <div style="background-color:black; color:white">
-        <p>© Created and Hosted by Atul Sharma</p>
+    <!-- Hero section -->
+    <section class="hero-section">
+        <div class="hero-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
+                <div class="hs-text">
+                    <div class="container">
+                        <h2>I, <span>Vysor Plays</span>, Welcome <span>You</span></h2>
+                        <p style="font-size: 15px;">The place where you will have a lot content and information about
+                            various <b><em>Topics,
+                                    <br>Games,
+                                    Tech Related, Trending, Gaming Channel,
+                                    Livestreams, Schedule, Blogs, </em></b>and more... <br>
+                            Take a pause, hold your breath and support me by <a href="https://youtube.com/@VysorPlays"
+                                style="color: #00ef05;" target="_blank">Subscribing</a> and <a
+                                href="https://instagram.com/VysorPlays" style="color: #00ef05;"
+                                target="_blank">Following</a> Me!</p>
+                        <a href="welcome-blog.html" class="site-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-item set-bg" data-setbg="img/slider-4.jpg">
+                <div class="hs-text">
+                    <div class="container">
+                        <h2>The Best <span>Games</span> Out There</h2>
+                        <p style="font-size: 15px;">“Sharing is caring - so why am I sharing what I know about the
+                            latest games?<br>
+                            Because it's fun to learn things together! So, why not come join me <br>
+                            and see what it's like to be up-to-date with all the gaming news out there?”
+                        </p>
+                        <a href="welcome-blog-2.html" class="site-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-item set-bg" data-setbg="img/slider-5.jpg">
+                <div class="hs-text">
+                    <div class="container">
+                        <h2>The Virtual <span>World</span> Of Multiple Genre</h2>
+                        <p style="font-size: 15px;">The World of Great Fun and Amazing Games of various Genre including
+                            <em><b><br> Action,
+                                    Action-adventure, Adventure, Horror, Licensed, Massively multiplayer online,
+                                    Role-playing, Sci-fi, Simulation, Strategy, </b></em>
+                            <br>and many more...
+                        </p>
+                        <a href="welcome-blog-3.html" class="site-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-item set-bg" data-setbg="img/slider-10.jpg">
+                <div class="hs-text">
+                    <div class="container">
+                        <h2><span>Fun</span>, <span>Movies</span> & <span>Entertainment</span> Zone</h2>
+                        <p style="font-size: 15px;">
+                            Games are not the only way to do fun. Join Me for more Entertainment options such as <br>
+                            <em><b>Watch Party for Movies/Series, Co-play with me Live, Suggestions/Reviews for any new
+                                    Movies/Series, </b></em><br>and the list is endless...
+                        </p>
+                        <a href="welcome-blog-4.html" class="site-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hs-item set-bg" data-setbg="img/slider-12.jpg">
+				<div class="hs-text">
+					<div class="container">
+						<h2>Eat, Sleep, <span>Game</span>, Repeat</h2>
+						<p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
+						<a href="#" class="site-btn">Read More</a>
+					</div>
+				</div>
+			</div> -->
+            <div class="hs-item set-bg" data-setbg="img/slider-7.jpg">
+                <div class="hs-text">
+                    <div class="container">
+                        <h2>Latest <span>Trending</span> in Gaming & Tech</h2>
+                        <p style="font-size: 15px;">Explore here and Read Blogs for getting information about what's
+                            trending <br> in the Gaming Industry as well as
+                            in the Tech & Gadgets as per the interest.<br><em><b>Don't like Reading?</b></em> We got you
+                            covered. Check out the Videos as well on
+                            <a href="https://youtube.com/@VysorPlays" style="color: #00ef05;" target="_blank">YouTube
+                                Channel</a> and <a href="https://instagram.com/VysorPlays" style="color: #00ef05;"
+                                target="_blank">Instagram</a>.
+                        </p>
+                        <a href="welcome-blog-5.html" class="site-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+
+
+    <!-- Latest news section -->
+    <!-- <p class="totop"> 
+        <a href="#top">Top</a> 
+    </p> -->
+    <div class="latest-news-section">
+        <div class="ln-title" style="color: black;">What's New</div>
+        <div class="news-ticker">
+            <div class="news-ticker-contant">
+                <div class="nt-item"><span class="new social-btn">new</span>Explore all new releases on <a
+                        href="https://store.steampowered.com/explore/new/" target="_blank" style="color: #00ef05;">Steam
+                        Store</a> starting with the latest and trending games. </div>
+                <div class="nt-item"><span class="strategy">strategy</span>From the World of Most Recommended Strategy
+                    based games only on <a href="https://store.steampowered.com/category/strategy" target="_blank"
+                        style="color: #00ef05;">Steam</a>. </div>
+                <div class="nt-item"><span class="topselling">top selling</span>The Most wide <a
+                        href="https://store.steampowered.com/charts/topselling/global" target="_blank"
+                        style="color: #00ef05;">Top Selling</a> variety of RPGs, Action RPGs, Simulation-based, Horror,
+                    Anime, Themes and more.
+                </div>
+                <div class="nt-item"><span class="trending">action</span>The new and trending single and multiplayer
+                    Co-Op <a href="https://store.steampowered.com/category/action" target="_blank"
+                        style="color: #00ef05;">Action Games</a> at your disposal to explore.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest news section end -->
+
+    <!-- VysorPlays Banner section -->
+    <!-- <section class="feature-section" style="padding-top: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-15">
+                        <img src="img/vysorplays-banner.png">
+				</div>
+			</div>
+		</div>
+	</section> -->
+    <!-- VysorPlays Banner section end -->
+
+
+    <!-- Feature section -->
+    <section class="feature-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 p-0">
+                    <div class="feature-item set-bg" data-setbg="img/features/7.jpg">
+                        <span class="cata roleplay">rpg</span>
+                        <div class="fi-content text-white">
+                            <h5 class="feature-text"><a href="#">Lots of Action, and Thrilling Experience</a></h5>
+                            <p>Engage with the gameworld through characters who have backstories and existing motivations.</p>
+                            <!-- <a href="#" class="fi-comment">3 Comments</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-0">
+                    <div class="feature-item set-bg" data-setbg="img/features/10.jpg">
+                        <span class="cata strategy">strategy</span>
+                        <div class="fi-content text-white">
+                            <h5 class="feature-text"><a href="#">Games to Play with the Friends or the World</a></h5>
+                            <p>Games require internal decision tree-style thinking, and typically very high situational awareness.</p>
+                            <!-- <a href="#" class="fi-comment">3 Comments</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-0">
+                    <div class="feature-item set-bg" data-setbg="img/features/13.jpg">
+                        <span class="cata co-op">co-op</span>
+                        <div class="fi-content text-white">
+                            <h5 class="feature-text"><a href="#">Co-Op Games - Strategy, Game Sense, Skills</a></h5>
+                            <p>Players to work together as teammates, usually against one or more non-player character opponents.</p>
+                            <!-- <a href="#" class="fi-comment">3 Comments</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 p-0">
+                    <div class="feature-item set-bg" data-setbg="img/features/11.jpg">
+                        <span class="cata racing">racing</span>
+                        <div class="fi-content text-white">
+                            <h5 class="feature-text"><a href="#">Here Speed Thrills, But Doesn't Kill</a></h5>
+                            <p>A spectrum between more realistic racing simulations and more fantastical arcade-style racing games.</p>
+                            <!-- <a href="#" class="fi-comment">3 Comments</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature section end -->
+
+
+    <!-- Recent game section  -->
+    <section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+        <div class="container">
+            <div class="section-title">
+                <div class="cata new">new</div>
+                <h2>Recent Games</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/15.jpg">
+                            <div class="cata roleplay">rpg</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>Role-Playing Games, where you are the center of all</h5>
+                            <p>Most people will find a safe haven in your RPGnet's or your ENWorld's but if you care then it can be something more akin to a minefield.</p>
+                            <!-- https://www.wired.com/2009/06/five-great-blogs-about-role-playing-games/ -->
+                            <a href="welcome-blog-4.html#articles" class="comment">Read more...</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/17.jpg">
+                            <div class="cata racing">strategy</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>Games which not only require skills, but strategy too</h5>
+                            <p>Strategy games typically consist of combat and warfare-focused gameplay. They demand deeper user commitment and […]</p>
+                            <!-- https://adjoe.io/glossary/mobile-strategy-games/ -->
+                            <a href="welcome-blog.html#articles" class="comment">Read more...</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recent-game-item">
+                        <div class="rgi-thumb set-bg" data-setbg="img/recent-game/18.jpg">
+                            <div class="cata adventure">Adventure</div>
+                        </div>
+                        <div class="rgi-content">
+                            <h5>Have Fun on the Adventure Ride in multiple games</h5>
+                            <p>Adventure games,a popular genre of gaming for decades, are loved by gamers for the unique mix of storytelling, puzzle solving, and exploration.</p>
+                            <!-- https://blog.acer.com/en/discussion/272/what-are-adventure-games -->
+                            <a href="welcome-blog-2.html#articles" class="comment">Read more...</a>
+                            <div class="rgi-extra">
+                                <div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
+                                <div class="rgi-heart"><img src="img/icons/heart.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent game section end -->
+
+
+    <!-- Tournaments section -->
+    <section class="tournaments-section spad">
+        <div class="container">
+            <div class="tournament-title">Online Co-Games</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tournament-item mb-4 mb-lg-0">
+                        <div class="ti-notic">Play With Me</div>
+                        <div class="ti-content">
+                            <div class="ti-thumb set-bg" data-setbg="img/tournament/6.jpg"></div>
+                            <div class="ti-text">
+                                <h4>CS: GO</h4>
+                            
+                                <ul>
+                                    <li><span>Tournament Beggins:</span> June 20, 2018</li>
+                                    <li><span>Tounament Ends:</span> July 01, 2018</li>
+                                    <li><span>Participants:</span> 10 teams</li>
+                                    <li><span>Tournament Author:</span> Admin</li>
+                                </ul>
+                                <p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tournament-item">
+                        <div class="ti-notic">Play With Me</div>
+                        <div class="ti-content">
+                            <div class="ti-thumb set-bg" data-setbg="img/tournament/4.jpg"></div>
+                            <div class="ti-text">
+                                <h4>VALORANT</h4>
+                                <ul>
+                                    <li><span>Tournament Beggins:</span> June 20, 2018</li>
+                                    <li><span>Tounament Ends:</span> July 01, 2018</li>
+                                    <li><span>Participants:</span> 10 teams</li>
+                                    <li><span>Tournament Author:</span> Admin</li>
+                                </ul>
+                                <p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tournaments section bg -->
+
+
+    <!-- Review section -->
+    <section class="review-section spad set-bg" data-setbg="img/review-bg.png">
+        <div class="container">
+            <div class="section-title">
+                <div class="cata topselling">Trending</div>
+                <h2>Recent Reviews</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-item">
+                        <div class="review-cover set-bg image-border image-border-radius" data-setbg="img/review/12.jpg">
+                            <div class="score yellow">9.3</div>
+                        </div>
+                        <div class="review-text">
+                            <h5>Among Us</h5>
+                            <p>Among Us: A social deduction hit that sparks intrigue and laughter, fostering engaging teamwork and deception in its suspenseful gameplay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-item">
+                        <div class="review-cover set-bg image-border image-border-radius" data-setbg="img/review/17.jpg">
+                            <div class="score purple">8.5</div>
+                        </div>
+                        <div class="review-text">
+                            <h5>FIFA</h5>
+                            <p>FIFA 22: Soccer brilliance with refined mechanics, realistic gameplay, and immersive modes. A must-play for fans of the beautiful game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-item">
+                        <div class="review-cover set-bg image-border image-border-radius" data-setbg="img/review/14.jpg">
+                            <div class="score green">9.8</div>
+                        </div>
+                        <div class="review-text">
+                            <h5>Minecraft</h5>
+                            <p>Minecraft: Endless creativity in a blocky world. Crafting, building, and exploring with friends or solo, a timeless sandbox adventure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="review-item">
+                        <div class="review-cover set-bg image-border image-border-radius" data-setbg="img/review/18.jpg">
+                            <div class="score pink">8.4</div>
+                        </div>
+                        <div class="review-text">
+                            <h5>Cricket</h5>
+                            <p>Cricket 19: A comprehensive simulation that captures the nuances of the sport, offering immersive gameplay and authentic cricketing experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review section end -->
+
+
+    <!-- Footer top section -->
+    <section class="footer-top-section">
+        <div class="container">
+            <div class="footer-top-bg">
+                <img src="img/footer-top-bg.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo text-white">
+                        <img src="img/footer-logo.png" alt="">
+                        <p>🕹️ Leveling up as 'Vysor Plays' in the gaming realm, 💻 architecting code by day, and diving into the magical world of movies by night - that's me in a nutshell! 🌌🍿</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget mb-5 mb-md-0">
+                        <h4 class="fw-title">Latest Posts</h4>
+                        <div class="latest-blog">
+                            <div class="lb-item">
+                                <div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.jpg"></div>
+                                <div class="lb-content">
+                                    <div class="lb-alsoRead" ><a href="welcome-blog.html#article3" style="color: #ff611d;font-size: 16px;"> Also Read About...</a></div>
+                                    <p>What's trending in the market and what's has been outdated </p>
+                                    <!-- <a href="#" class="lb-author">By Admin</a> -->
+                                </div>
+                            </div>
+                            <div class="lb-item">
+                                <div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.jpg"></div>
+                                <div class="lb-content">
+                                    <div class="lb-alsoRead" ><a href="welcome-blog-2.html#article2" style="color: #ff611d;font-size: 16px;"> Also Read About...</a></div>
+                                    <p>More information on various new games and upcoming launches </p>
+                                    <!-- <a href="#" class="lb-author">By Admin</a> -->
+                                </div>
+                            </div>
+                            <div class="lb-item">
+                                <div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.jpg"></div>
+                                <div class="lb-content">
+                                    <div class="lb-alsoRead" ><a href="welcome-blog-3.html#article3" style="color: #ff611d;font-size: 16px;"> Also Read About...</a></div>
+                                    <p>What will be the most beneficial business in 2024 </p>
+                                    <!-- <a href="#" class="lb-author">By Admin</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="fw-title">Top Comments</h4>
+                        <div class="top-comment">
+                            <div class="tc-item">
+                                <div class="tc-thumb set-bg" data-setbg="img/authors/5.jpg" style="border: 1px solid #B0B0B0; border-radius: 50%;"></div>
+                                    <div class="tc-content">
+                                    <p><a href="community.html">InfernoJester</a> <span>on</span> <br>Nintendo Switch OLED Model Released</p>
+                                    <!-- <div class="tc-date">June 21, 2018</div> -->
+                                </div>
+                            </div>
+                            <div class="tc-item">
+                                <div class="tc-thumb set-bg" data-setbg="img/authors/4.jpg" style="border: 1px solid #B0B0B0; border-radius: 50%;"></div>
+                                    <div class="tc-content">
+                                    <p><a href="community.html">PhantomFury88</a> <span>on</span> <br>AMD Unveils Ryzen 6000 CPUs</p>
+                                    <!-- <div class="tc-date">June 21, 2018</div> -->
+                                </div>
+                            </div>
+                            <div class="tc-item">
+                                <div class="tc-thumb set-bg" data-setbg="img/authors/10.jpg" style="border: 1px solid #B0B0B0; border-radius: 50%;"></div>
+                                    <div class="tc-content">
+                                    <p><a href="community.html">ShadowStriker92</a> <span>on</span> <br>Valve Teases SteamPal Handheld Console</p>
+                                    <!-- <div class="tc-date">June 21, 2018</div> -->
+                                </div>
+                            </div>
+                            <div class="tc-item">
+                                <div class="tc-thumb set-bg" data-setbg="img/authors/9.jpg" style="border: 1px solid #B0B0B0; border-radius: 50%;"></div>
+                                    <div class="tc-content">
+                                    <p><a href="community.html">PixelProwler</a> <span>on</span> <br>Ubisoft Announces Quartz Platform</p>
+                                    <!-- <div class="tc-date">June 21, 2018</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer top section end -->
+
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Games</a></li>
+                <li><a href="categories.html">Blog</a></li>
+                <li><a href="community.html">Forums</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="copyright">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> | With <i class="fa fa-heart-o"
+                    aria-hidden="true"></i> to you by <a href="https://youtube.com/@VysorPlays" style="color: #00ef05;"
+                    target="_blank">VysorPlays</a>
+            </p>
+            <ul class="footer-menu-icon">
+                <li><a href="https://youtube.com/@VysorPlays" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-youtube" title="YouTube"></i></a></li>
+            <li><a href="https://instagram.com/VysorPlays" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-instagram" title="Instagram"></i></a></li>
+            <li><a href="https://facebook.com/VysorPlays" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+            <!-- <li><a href="https://twitter.com/VysorPlays" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-twitter" title="X (Earlier Twitter)"></i></a></li> -->
+            <li><a href="https://discord.gg/762QEwSVBy" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-discord" title="Discord"></i></a></li>
+            <!-- <li><a href="https://www.threads.net/@vysorplays" target="_blank"class="social-links" style="color: #aeaeae;"><img src="img/threads-logo.png"
+                    height="16px" width="13.7px"></a></li> -->
+            <!-- <a href="#"><i class="fa fa-behance"></i></a> -->
+            <li><a href="https://linkedin.com/in/VysorPlays" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-linkedin" title="LinkedIn"></i></a></li>
+            <li><a href="https://steamcommunity.com/id/VysorPlays/" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-steam" title="Steam"></i></a></li>
+            <li><a href="https://streamlabs.com/vysorplays/" target="_blank" class="social-links"
+                    style="color: #aeaeae;"><i class="fa fa-rupee" title="Donate/Support"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
+    <script src="js/main.js"></script>
     </div>
 </body>
 
